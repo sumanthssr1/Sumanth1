@@ -1,0 +1,6 @@
+@Auth_MicroService_DBFA_Project_HostAddress = http://localhost:5031
+
+GET {{Auth_MicroService_DBFA_Project_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\dell\source\repos\Auth-MicroService-DBFA-Project\Auth-MicroService-DBFA-Project\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-11-17T09:25:40.6065851Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=%28localdb%29\MSSQLLocalDB%3bDatabase=Auth-MS-DB%3bTrusted_Connection=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Auth_MicroService_DBFA_Project.Models.ApplicationDbContext">
+      <Value>Server=%28localdb%29\MSSQLLocalDB%3bDatabase=Auth-MS-DB%3bTrusted_Connection=True%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

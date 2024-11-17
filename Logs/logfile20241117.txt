@@ -1,0 +1,46 @@
+2024-11-17 14:45:36 [INF] Now listening on: http://localhost:5031
+2024-11-17 14:45:36 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-17 14:45:36 [INF] Hosting environment: Development
+2024-11-17 14:45:36 [INF] Content root path: C:\Users\dell\source\repos\Auth-MicroService-DBFA-Project\Auth-MicroService-DBFA-Project
+2024-11-17 14:45:37 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger - null null
+2024-11-17 14:45:38 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger - 301 0 null 815.7962ms
+2024-11-17 14:45:38 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger/index.html - null null
+2024-11-17 14:45:38 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger/index.html - 200 null text/html;charset=utf-8 239.8799ms
+2024-11-17 14:45:38 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger/swagger-ui.css - null null
+2024-11-17 14:45:38 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger/swagger-ui-bundle.js - null null
+2024-11-17 14:45:38 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger/swagger-ui-standalone-preset.js - null null
+2024-11-17 14:45:39 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-11-17 14:45:39 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-11-17 14:45:39 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger/swagger-ui.css - 200 152034 text/css 348.3076ms
+2024-11-17 14:45:39 [INF] Request starting HTTP/1.1 GET http://localhost:5031/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-17 14:45:39 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 329.9625ms
+2024-11-17 14:45:39 [INF] Request starting HTTP/1.1 GET http://localhost:5031/_vs/browserLink - null null
+2024-11-17 14:45:39 [INF] Request finished HTTP/1.1 GET http://localhost:5031/_framework/aspnetcore-browser-refresh.js - 200 13796 application/javascript; charset=utf-8 13.2911ms
+2024-11-17 14:45:39 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-11-17 14:45:39 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 369.2029ms
+2024-11-17 14:45:39 [INF] Request finished HTTP/1.1 GET http://localhost:5031/_vs/browserLink - 200 null text/javascript; charset=UTF-8 136.4946ms
+2024-11-17 14:45:39 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger/v1/swagger.json - null null
+2024-11-17 14:45:39 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger/favicon-32x32.png - null null
+2024-11-17 14:45:39 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-11-17 14:45:39 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger/favicon-32x32.png - 200 628 image/png 2.3382ms
+2024-11-17 14:45:39 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 252.2147ms
+2024-11-17 14:45:53 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Countries - null null
+2024-11-17 14:45:53 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-17 14:45:53 [INF] Route matched with {action = "GetCountries", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Auth_MicroService_DBFA_Project.Models.Country]]] GetCountries() on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-17 14:45:56 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Country_ID], [c].[Code], [c].[Country_Name]
+FROM [Country] AS [c]
+2024-11-17 14:45:56 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Auth_MicroService_DBFA_Project.Models.Country, Auth-MicroService-DBFA-Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-17 14:45:56 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project) in 3264.4842ms
+2024-11-17 14:45:56 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-17 14:45:56 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Countries - 200 null application/json; charset=utf-8 3327.0949ms
+2024-11-17 14:46:30 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Countries - application/json 29
+2024-11-17 14:46:30 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-17 14:46:30 [INF] Route matched with {action = "GetCountries", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Auth_MicroService_DBFA_Project.Models.Country]]] GetCountries() on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-17 14:46:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Country_ID], [c].[Code], [c].[Country_Name]
+FROM [Country] AS [c]
+2024-11-17 14:46:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Auth_MicroService_DBFA_Project.Models.Country, Auth-MicroService-DBFA-Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-17 14:46:30 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project) in 42.3426ms
+2024-11-17 14:46:30 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-17 14:46:30 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Countries - 200 null application/json; charset=utf-8 46.4847ms

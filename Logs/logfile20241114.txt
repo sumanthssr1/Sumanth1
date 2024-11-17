@@ -1,0 +1,112 @@
+2024-11-14 11:53:50 [INF] Now listening on: http://localhost:5031
+2024-11-14 11:53:50 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-14 11:53:50 [INF] Hosting environment: Development
+2024-11-14 11:53:50 [INF] Content root path: C:\Users\dell\source\repos\Auth-MicroService-DBFA-Project\Auth-MicroService-DBFA-Project
+2024-11-14 11:53:50 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger/index.html - null null
+2024-11-14 11:53:51 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger/index.html - 200 null text/html;charset=utf-8 406.2429ms
+2024-11-14 11:53:51 [INF] Request starting HTTP/1.1 GET http://localhost:5031/_vs/browserLink - null null
+2024-11-14 11:53:51 [INF] Request starting HTTP/1.1 GET http://localhost:5031/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-14 11:53:51 [INF] Request finished HTTP/1.1 GET http://localhost:5031/_framework/aspnetcore-browser-refresh.js - 200 13796 application/javascript; charset=utf-8 4.5312ms
+2024-11-14 11:53:51 [INF] Request finished HTTP/1.1 GET http://localhost:5031/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.6669ms
+2024-11-14 11:53:51 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger/v1/swagger.json - null null
+2024-11-14 11:53:51 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.4212ms
+2024-11-14 11:53:58 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Countries - null null
+2024-11-14 11:53:58 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:53:58 [INF] Route matched with {action = "GetCountries", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Auth_MicroService_DBFA_Project.Models.Country]]] GetCountries() on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-14 11:54:00 [INF] Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Country_ID], [c].[Code], [c].[Country_Name]
+FROM [Country] AS [c]
+2024-11-14 11:54:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Auth_MicroService_DBFA_Project.Models.Country, Auth-MicroService-DBFA-Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-14 11:54:00 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project) in 2029.975ms
+2024-11-14 11:54:00 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:54:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Countries - 200 null application/json; charset=utf-8 2102.073ms
+2024-11-14 11:54:03 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Countries - null null
+2024-11-14 11:54:03 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:54:03 [INF] Route matched with {action = "GetCountries", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Auth_MicroService_DBFA_Project.Models.Country]]] GetCountries() on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-14 11:54:03 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Country_ID], [c].[Code], [c].[Country_Name]
+FROM [Country] AS [c]
+2024-11-14 11:54:03 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Auth_MicroService_DBFA_Project.Models.Country, Auth-MicroService-DBFA-Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-14 11:54:03 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project) in 29.4246ms
+2024-11-14 11:54:03 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:54:03 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Countries - 200 null application/json; charset=utf-8 31.9593ms
+2024-11-14 11:55:10 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Countries - application/json 67
+2024-11-14 11:55:10 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:55:10 [INF] Route matched with {action = "PostCountry", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Auth_MicroService_DBFA_Project.Models.Country]] PostCountry(Auth_MicroService_DBFA_Project.Models.Country) on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-14 11:55:10 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-14 11:55:10 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project) in 79.006ms
+2024-11-14 11:55:10 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:55:10 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Countries - 400 null application/problem+json; charset=utf-8 102.9838ms
+2024-11-14 11:55:44 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Countries - application/json 338
+2024-11-14 11:55:44 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:55:44 [INF] Route matched with {action = "PostCountry", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Auth_MicroService_DBFA_Project.Models.Country]] PostCountry(Auth_MicroService_DBFA_Project.Models.Country) on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-14 11:55:44 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-14 11:55:44 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project) in 23.6528ms
+2024-11-14 11:55:44 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:55:44 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Countries - 400 null application/problem+json; charset=utf-8 44.3213ms
+2024-11-14 11:56:55 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Countries - application/json 78
+2024-11-14 11:56:55 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:56:55 [INF] Route matched with {action = "PostCountry", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Auth_MicroService_DBFA_Project.Models.Country]] PostCountry(Auth_MicroService_DBFA_Project.Models.Country) on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-14 11:56:55 [INF] Executed DbCommand (60ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4) (DbType = AnsiString), @p2='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Country] ([Country_ID], [Code], [Country_Name])
+VALUES (@p0, @p1, @p2);
+2024-11-14 11:56:55 [INF] Executing CreatedAtActionResult, writing value of type 'Auth_MicroService_DBFA_Project.Models.Country'.
+2024-11-14 11:56:55 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project) in 286.2866ms
+2024-11-14 11:56:55 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:56:55 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Countries - 201 null application/json; charset=utf-8 295.9729ms
+2024-11-14 11:58:36 [INF] Request starting HTTP/1.1 POST http://localhost:5031/api/Countries - application/json 79
+2024-11-14 11:58:36 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:58:36 [INF] Route matched with {action = "PostCountry", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Auth_MicroService_DBFA_Project.Models.Country]] PostCountry(Auth_MicroService_DBFA_Project.Models.Country) on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-14 11:58:36 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4) (DbType = AnsiString), @p2='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Country] ([Country_ID], [Code], [Country_Name])
+VALUES (@p0, @p1, @p2);
+2024-11-14 11:58:36 [INF] Executing CreatedAtActionResult, writing value of type 'Auth_MicroService_DBFA_Project.Models.Country'.
+2024-11-14 11:58:36 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project) in 26.8449ms
+2024-11-14 11:58:36 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.PostCountry (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:58:36 [INF] Request finished HTTP/1.1 POST http://localhost:5031/api/Countries - 201 null application/json; charset=utf-8 60.0353ms
+2024-11-14 11:59:44 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Countries - null null
+2024-11-14 11:59:44 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:59:44 [INF] Route matched with {action = "GetCountries", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Auth_MicroService_DBFA_Project.Models.Country]]] GetCountries() on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-14 11:59:44 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Country_ID], [c].[Code], [c].[Country_Name]
+FROM [Country] AS [c]
+2024-11-14 11:59:44 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Auth_MicroService_DBFA_Project.Models.Country, Auth-MicroService-DBFA-Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-14 11:59:44 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project) in 19.0743ms
+2024-11-14 11:59:44 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-14 11:59:44 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Countries - 200 null application/json; charset=utf-8 70.7043ms
+2024-11-14 12:02:18 [INF] Now listening on: http://localhost:5031
+2024-11-14 12:02:18 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-14 12:02:18 [INF] Hosting environment: Development
+2024-11-14 12:02:18 [INF] Content root path: C:\Users\dell\source\repos\Auth-MicroService-DBFA-Project\Auth-MicroService-DBFA-Project
+2024-11-14 12:02:19 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger/index.html - null null
+2024-11-14 12:02:19 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger/index.html - 200 null text/html;charset=utf-8 288.228ms
+2024-11-14 12:02:19 [INF] Request starting HTTP/1.1 GET http://localhost:5031/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-14 12:02:19 [INF] Request finished HTTP/1.1 GET http://localhost:5031/_framework/aspnetcore-browser-refresh.js - 200 13796 application/javascript; charset=utf-8 4.734ms
+2024-11-14 12:02:19 [INF] Request starting HTTP/1.1 GET http://localhost:5031/_vs/browserLink - null null
+2024-11-14 12:02:19 [INF] Request finished HTTP/1.1 GET http://localhost:5031/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.2141ms
+2024-11-14 12:02:19 [INF] Request starting HTTP/1.1 GET http://localhost:5031/swagger/v1/swagger.json - null null
+2024-11-14 12:02:19 [INF] Request finished HTTP/1.1 GET http://localhost:5031/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.9075ms
+2024-11-14 12:02:58 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Countries - null null
+2024-11-14 12:02:58 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-14 12:02:58 [INF] Route matched with {action = "GetCountries", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Auth_MicroService_DBFA_Project.Models.Country]]] GetCountries() on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-14 12:03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Country_ID], [c].[Code], [c].[Country_Name]
+FROM [Country] AS [c]
+2024-11-14 12:03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Auth_MicroService_DBFA_Project.Models.Country, Auth-MicroService-DBFA-Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-14 12:03:00 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project) in 1806.1298ms
+2024-11-14 12:03:00 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-14 12:03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Countries - 200 null application/json; charset=utf-8 1860.9908ms
+2024-11-14 12:03:56 [INF] Request starting HTTP/1.1 GET http://localhost:5031/api/Countries - null null
+2024-11-14 12:03:56 [INF] Executing endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-14 12:03:56 [INF] Route matched with {action = "GetCountries", controller = "Countries"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Auth_MicroService_DBFA_Project.Models.Country]]] GetCountries() on controller Auth_MicroService_DBFA_Project.Controllers.CountriesController (Auth-MicroService-DBFA-Project).
+2024-11-14 12:03:56 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Country_ID], [c].[Code], [c].[Country_Name]
+FROM [Country] AS [c]
+2024-11-14 12:03:56 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Auth_MicroService_DBFA_Project.Models.Country, Auth-MicroService-DBFA-Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-14 12:03:56 [INF] Executed action Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project) in 69.388ms
+2024-11-14 12:03:56 [INF] Executed endpoint 'Auth_MicroService_DBFA_Project.Controllers.CountriesController.GetCountries (Auth-MicroService-DBFA-Project)'
+2024-11-14 12:03:56 [INF] Request finished HTTP/1.1 GET http://localhost:5031/api/Countries - 200 null application/json; charset=utf-8 94.7139ms
